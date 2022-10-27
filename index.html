@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="display">
+                <input id="display" placeholder="0" disabled>
+                <h2 id="historico"></h2>
+            </div>
+
+            <div class="row">
+                <button class="button purple-text" onclick="limpar()">AC</button>
+                <div></div>
+                <div></div>
+                <button class="button gray" onclick="add_operador('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="add_numero('7')">7</button>
+                <button class="button" onclick="add_numero('8')">8</button>
+                <button class="button" onclick="add_numero('9')">9</button>
+                <button class="button gray" onclick="add_operador('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="add_numero('4')">4</button>
+                <button class="button" onclick="add_numero('5')">5</button>
+                <button class="button" onclick="add_numero('6')">6</button>
+                <button class="button gray" onclick="add_operador('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="add_numero('1')">1</button>
+                <button class="button" onclick="add_numero('2')">2</button>
+                <button class="button" onclick="add_numero('3')">3</button>
+                <button class="button gray" onclick="add_operador('+')">+</button>
+            </div>
+            <div class="row">
+                <div></div>
+                <button class="button" onclick="add_numero('0')">0</button>
+                <button class="button" onclick="add_numero('.')">.</button>
+                <button class="button purple" onclick="total()">=</button>
+            </div>
+        </div>
+        <script src="js/teclado.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>
